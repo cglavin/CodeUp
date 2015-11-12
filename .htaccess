@@ -1,0 +1,25 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !^.*\.css$
+RewriteCond %{REQUEST_FILENAME} !^.*\.js$
+RewriteCond %{REQUEST_FILENAME} !^.*\.php$
+RewriteCond %{REQUEST_FILENAME} !^.*\.xml$
+RewriteCond %{REQUEST_FILENAME} !^.*\.html$
+
+RewriteCond %{REQUEST_FILENAME} !^.*\.jpg$
+RewriteCond %{REQUEST_FILENAME} !^.*\.gif$
+RewriteCond %{REQUEST_FILENAME} !^.*\.png$
+
+RewriteCond %{REQUEST_FILENAME} !^.*\.swf$
+RewriteCond %{REQUEST_FILENAME} !^.*\.mov$
+RewriteCond %{REQUEST_FILENAME} !^.*\.wmv$
+RewriteCond %{REQUEST_FILENAME} !^.*\.mp3$
+RewriteCond %{REQUEST_FILENAME} !^.*\.pdf$
+
+RewriteCond %{REQUEST_FILENAME} !^.*\.eot$
+RewriteCond %{REQUEST_FILENAME} !^.*\.woff$
+RewriteCond %{REQUEST_FILENAME} !^.*\.ttf$
+RewriteCond %{REQUEST_FILENAME} !^.*\.svg$
+
+RewriteRule ^(.*)$ index.php?$1
