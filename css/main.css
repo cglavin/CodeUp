@@ -1,0 +1,9 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar-right .btn{margin-top:6px;}
+.navbar-right span{color:#ffffff; margin-right:5px;}
+.link-list .glyphicon{font-size:20px; margin:3px; cursor:pointer;}
